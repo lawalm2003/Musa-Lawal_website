@@ -1,3 +1,29 @@
+## 🚀 Personal Portfolio
+
+This is my personal portfolio website built to showcase my skills, projects, and experience as a Frontend & Mobile Engineer.
+
+It highlights selected projects, technical skills, and ways to get in touch, all wrapped in a clean, responsive, and performance-focused UI.
+
+### 🛠 Tech Stack
+
+- React / Next.js
+- TypeScript
+- Tailwind CSS
+- AOS
+- Vercel (Deployment)
+
+### ✨ Features
+
+- Modern and responsive UI
+- Smooth animations and transitions
+- Project showcase section
+- Contact integration (email, phone, social links)
+- Optimized for performance and accessibility
+
+### 📬 Contact
+
+Feel free to reach out for collaborations, freelance work, or opportunities.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
