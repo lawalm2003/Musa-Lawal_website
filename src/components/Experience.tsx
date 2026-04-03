@@ -114,7 +114,7 @@ export default function Experience() {
           style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
           data-aos='fade-up'
         >
-          Where I've Worked
+          Where I&apos;ve Worked
         </h2>
 
         <div className='flex flex-col'>

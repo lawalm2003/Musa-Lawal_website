@@ -101,7 +101,7 @@ export default function Contact() {
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
               data-aos='fade-up'
             >
-              Let's build something{' '}
+              Let&apos;s build something{' '}
               <span className='font-serif italic font-normal text-accent'>
                 great together.
               </span>
@@ -112,7 +112,7 @@ export default function Contact() {
               data-aos='fade-up'
               data-aos-delay='100'
             >
-              I'm currently open to new frontend and mobile engineering
+              I&apos;m currently open to new frontend and mobile engineering
               opportunities. Whether you have a full role, a freelance project,
               or just want to connect — my inbox is always open.
             </p>

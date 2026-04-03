@@ -1,5 +1,6 @@
 // app/layout.jsx
 import './globals.css';
+import 'aos/dist/aos.css';
 
 import { Syne } from 'next/font/google';
 

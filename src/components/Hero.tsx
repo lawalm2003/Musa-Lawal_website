@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Hero() {
-  const orbRef = useRef(null);
+  const orbRef = useRef<HTMLDivElement | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       if (!orbRef.current) return;
       const x = (e.clientX / window.innerWidth - 0.5) * 30;
       const y = (e.clientY / window.innerHeight - 0.5) * 30;
