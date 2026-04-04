@@ -1,6 +1,7 @@
 // components/Navbar.jsx
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const navLinks = [
@@ -31,35 +32,35 @@ export default function Navbar() {
     >
       <div className='max-w-6xl mx-auto px-8 flex items-center justify-between'>
         {/* Logo */}
-        <a
+        <Link
           href='#hero'
           className='flex items-center gap-0.5 font-display font-black text-xl tracking-tight text-text-primary'
         >
           <span className='text-accent font-mono font-light'>&lt;</span>
           ML
           <span className='text-accent font-mono font-light'>/&gt;</span>
-        </a>
+        </Link>
 
         {/* Desktop Links */}
         <ul className='hidden md:flex items-center gap-8'>
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 className='relative text-xs font-medium text-text-secondary uppercase tracking-widest transition-colors duration-200 hover:text-text-primary group'
               >
                 {link.label}
                 <span className='absolute -bottom-0.5 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full' />
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
+            <Link
               href='mailto:lawalm891@gmail.com'
               className='text-xs font-bold uppercase tracking-widest bg-accent text-bg px-5 py-2 rounded-sm transition-all duration-200 hover:bg-text-primary hover:shadow-[0_0_20px_rgba(127,255,110,0.4)]'
             >
               Hire Me
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -91,22 +92,22 @@ export default function Navbar() {
       {menuOpen && (
         <div className='md:hidden fixed inset-0 top-[70px] bg-bg/97 backdrop-blur-3xl flex flex-col items-center justify-center gap-10 animate-slideIn z-40'>
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className='text-xl font-medium uppercase tracking-widest text-text-secondary hover:text-text-primary transition-colors'
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href='mailto:lawalm891@gmail.com'
             className='text-base font-bold uppercase tracking-widest bg-accent text-bg px-8 py-3 rounded-sm'
             onClick={() => setMenuOpen(false)}
           >
             Hire Me
-          </a>
+          </Link>
         </div>
       )}
     </nav>

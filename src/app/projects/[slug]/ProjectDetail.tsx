@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { projects, type Project, type ProjectImage } from '@/util/projectData';
 import { Gallery } from '@/components/UI/Gallery';
+import Link from 'next/link';
 
 // ─── Status badge styles ──────────────────────────────────────
 function statusStyles(status: Project['status']): React.CSSProperties {
@@ -212,7 +213,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
               </p>
 
               {project.previewUrl ? (
-                <a
+                <Link
                   href={project.previewUrl}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -256,7 +257,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                       strokeLinejoin='round'
                     />
                   </svg>
-                </a>
+                </Link>
               ) : (
                 <div className='flex items-center gap-2.5 px-4 py-3 rounded-md border border-border bg-white/[0.02] opacity-50 cursor-not-allowed'>
                   <svg
@@ -281,7 +282,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
               )}
 
               {project.githubUrl ? (
-                <a
+                <Link
                   href={project.githubUrl}
                   target='_blank'
                   rel='noopener noreferrer'
@@ -320,7 +321,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                       strokeLinejoin='round'
                     />
                   </svg>
-                </a>
+                </Link>
               ) : (
                 <div className='flex items-center gap-2.5 px-4 py-3 rounded-md border border-border bg-white/[0.02] opacity-50 cursor-not-allowed'>
                   <svg
@@ -377,7 +378,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           </p>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             {prev ? (
-              <a
+              <Link
                 href={`/projects/${prev.slug}`}
                 className='group flex items-center gap-4 bg-bg-card border border-border rounded-lg p-5 transition-all duration-200 hover:border-border-bright hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]'
               >
@@ -404,13 +405,13 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                     {prev.title}
                   </p>
                 </div>
-              </a>
+              </Link>
             ) : (
               <div />
             )}
 
             {next ? (
-              <a
+              <Link
                 href={`/projects/${next.slug}`}
                 className='group flex items-center justify-end gap-4 bg-bg-card border border-border rounded-lg p-5 transition-all duration-200 hover:border-border-bright hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]'
               >
@@ -437,7 +438,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                     strokeLinejoin='round'
                   />
                 </svg>
-              </a>
+              </Link>
             ) : (
               <div />
             )}

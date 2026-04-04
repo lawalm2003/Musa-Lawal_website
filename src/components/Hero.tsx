@@ -3,6 +3,7 @@
 
 import { tech } from '@/util/data';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Hero() {
@@ -143,7 +144,7 @@ export default function Hero() {
           data-aos='fade-up'
           data-aos-delay='500'
         >
-          <a
+          <Link
             href='#experience'
             className='group relative inline-flex items-center justify-center gap-2 bg-accent text-bg font-display font-semibold text-sm uppercase tracking-wider px-8 py-3.5 rounded-md transition-all duration-300 hover:shadow-[0_0_30px_rgba(127,255,110,0.3)] hover:-translate-y-0.5 active:translate-y-0 overflow-hidden'
           >
@@ -162,9 +163,9 @@ export default function Hero() {
               />
             </svg>
             <div className='absolute inset-0 bg-gradient-to-r from-accent to-[#9bff8a] opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href='#contact'
             className='inline-flex items-center gap-2 border border-border-bright bg-transparent text-text-primary font-display font-medium text-sm uppercase tracking-wider px-8 py-3.5 rounded-md transition-all duration-300 hover:border-accent hover:text-accent hover:bg-accent-dim/30 hover:-translate-y-0.5'
           >
@@ -183,9 +184,9 @@ export default function Hero() {
               />
             </svg>
             Get In Touch
-          </a>
+          </Link>
 
-          <a
+          <Link
             href='/musa-lawal-asemokhai-resume.pdf'
             target='_blank'
             className='inline-flex items-center gap-2 text-text-secondary font-mono text-sm tracking-wide transition-colors duration-200 hover:text-accent'
@@ -205,7 +206,7 @@ export default function Hero() {
               />
             </svg>
             Resume
-          </a>
+          </Link>
         </div>
 
         {/* Enhanced Stats Cards */}

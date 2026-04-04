@@ -1,5 +1,6 @@
 // components/About.jsx
 
+import Link from 'next/link';
 import SectionLabel from './SectionLabel';
 
 export default function About() {
@@ -97,14 +98,14 @@ export default function About() {
                     {key}
                   </span>
                   {href ? (
-                    <a
+                    <Link
                       href={href}
                       target={href.startsWith('http') ? '_blank' : undefined}
                       rel='noopener noreferrer'
                       className='text-[0.875rem] text-accent hover:opacity-70 transition-opacity'
                     >
                       {val}
-                    </a>
+                    </Link>
                   ) : (
                     <span className='text-[0.875rem] text-text-secondary'>
                       {val}
